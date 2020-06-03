@@ -4,7 +4,9 @@ import router from './router'
 import store from './store'
 import './plugins/element.js'
 import echarts from 'echarts'
+import axios from 'axios'
 
+Vue.prototype.$http = axios
 Vue.config.productionTip = false
 Vue.prototype.$echarts = echarts
 
